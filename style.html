@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Medication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Self Medication Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home-remedies">Home Remedies</a></li>
+                <li><a href="#medication">Medication</a></li>
+                <li><a href="#consultation">Doctor Consultation</a></li>
+                <li><a href="#delivery">Home Delivery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="search">
+        <h2>Search Health Issues</h2>
+        <input type="text" id="search-input" placeholder="Enter health issue...">
+        <button id="search-button">Search</button>
+    </section>
+    
+    <section id="results">
+        <h2>Results</h2>
+        <div id="remedies-results"></div>
+        <div id="medications-results"></div>
+    </section>
+
+    <section id="home-remedies">
+        <h2>Home Remedies</h2>
+        <div class="remedy" data-issue="cold, flu">
+            <h3>Cold & Flu</h3>
+            <p>Stay hydrated, rest, and use honey and lemon tea.</p>
+        </div>
+        <div class="remedy" data-issue="headache">
+            <h3>Headache</h3>
+            <p>Drink plenty of water, and use peppermint oil or a cold compress.</p>
+        </div>
+        <!-- Add more remedies as needed -->
+    </section>
+    
+    <section id="medication">
+        <h2>Medication</h2>
+        <div class="medication" data-issue="pain, inflammation">
+            <h3>Ibuprofen</h3>
+            <p>Used for pain relief and inflammation.</p>
+        </div>
+        <div class="medication" data-issue="fever, pain">
+            <h3>Paracetamol</h3>
+            <p>Used for fever and mild pain relief.</p>
+        </div>
+        <!-- Add more medications as needed -->
+    </section>
+    
+    <section id="consultation">
+        <h2>Doctor Consultation</h2>
+        <form id="consultation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="issue">Health Issue:</label>
+            <textarea id="issue" name="issue" required></textarea>
+            
+            <label for="contact">Contact Details:</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <button type="submit">Request Consultation</button>
+        </form>
+    </section>
+    
+    <section id="delivery">
+        <h2>Home Delivery</h2>
+        <form id="delivery-form">
+            <label for="prescription">Upload Prescription:</label>
+            <input type="file" id="prescription" name="prescription" required>
+            
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            
+            <button type="submit">Order Medication</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Self Medication Hub. All rights reserved.</p>
+    </footer>
+    
+    <script src="style.js"></script>
+</body>
+</html>
